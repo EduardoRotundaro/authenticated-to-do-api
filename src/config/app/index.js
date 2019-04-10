@@ -1,6 +1,10 @@
+const env_file = require('../../../.env')
+
 const API_PORT = process.env.PORT || 4040
 
-//TODO: add secret strings to .env file
+const API_SECRET = env_file.API_SECRET
+
+const CRYPT_SECRET = env_file.CRYPTOR_SECRET
 
 module.exports = {
     API_PORT,
