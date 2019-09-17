@@ -1,4 +1,4 @@
-const statusEnum = require('../../constants/enumerators/response-status');
+const statusEnum = require('../constants/enumerators/response-status');
 
 module.exports = (res, status, data, err, query) => {
     res.status(status);
