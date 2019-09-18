@@ -9,7 +9,7 @@ require('../src/api/routes/public/user')('/user/', publicRoutes);
 
 let protectedRoutes = express.Router();
 require('../src/api/routes/private/user')('/user/', protectedRoutes);
-require('../src/api/routes/private/to-do')('/to-do/', protectedRoutes);
+require('../src/api/routes/private/to-do-item')('/to-do/', protectedRoutes);
 
 module.exports = (api) => {
     if(!global.PRODUCTION) api.use(reqLogger);
